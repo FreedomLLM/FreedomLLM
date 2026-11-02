@@ -1,3 +1,11 @@
+# IDE
 .venv
 .vscode
+
+# MacOS
+.DS_Store
+
+# Pixi
+.pixi/*
+!.pixi/config.toml
 
