@@ -1,0 +1,6 @@
+[project]
+name = "freedomllm"
+version = "0.0.1"
+authors = [{ name = "Yeongu Choe", email = "yeongu.choe@icloud.com" }]
+requires-python = ">=3.12"
+dependencies = ["triton==3.9.0"]
