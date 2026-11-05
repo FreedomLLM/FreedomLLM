@@ -5,7 +5,12 @@
 # MacOS
 .DS_Store
 
+# Python
+*.egg-info
+
 # Pixi
-.pixi/*
+.pixi
 !.pixi/config.toml
 
+# uv
+uv-cache
