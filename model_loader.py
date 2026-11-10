@@ -10,6 +10,8 @@ class GPUMaker(Enum):
     AMD = auto()
     INTEL = auto()
 
+# TODO: Current load_model() method load every model weight into one GPU.
+# Change algorithm so that it can efficiently distributed model weights to multiple GPUs
 class ModelLoader:
     def __init__(self, gpu_maker: GPUMaker):
         self.gpu_maker = gpu_maker
