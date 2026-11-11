@@ -7,13 +7,13 @@ FreedomLLM is a general-purpose LLM inference engine that helps AI engineers dep
 ### Install the Project
 
 ```bash
-python pip install --editable .
+pip install --editable .
 ```
 
 ### Install Test Dependencies
 
 ```bash
-python pip install --group test
+pip install --group test
 ```
 
 ## Testing
