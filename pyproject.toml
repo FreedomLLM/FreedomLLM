@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools==84.2.1"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "freedomllm"
 version = "0.0.1"
@@ -11,8 +15,17 @@ dependencies = [
 ]
 
 [dependency-groups]
-test = ["pytest==9.2.0"]
+test = ["pytest==9.2.0", "numpy==2.5.4"]
+
+[tool.setuptools]
+py-modules = ["model_loader"]
+
+[tool.setuptools.packages.find]
+include = ["kernels*", "entrypoints"]
 
 [tool.pytest]
 minversion = "9.0"
 testpaths = ["tests"]
+pythonpath = ["."]
+strict_markers = true
+markers = ["model_loader"]
