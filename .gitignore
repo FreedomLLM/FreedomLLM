@@ -6,7 +6,11 @@
 .DS_Store
 
 # Python
+__pycache__/
+*.py[codz]
 *.egg-info
+build/
+dist/
 
 # Pixi
 .pixi
