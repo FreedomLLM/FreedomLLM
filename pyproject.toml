@@ -21,7 +21,7 @@ test = ["pytest==9.2.0", "numpy==2.5.4"]
 py-modules = ["model_loader"]
 
 [tool.setuptools.packages.find]
-include = ["kernels*", "entrypoints"]
+where = ["src"]
 
 [tool.pytest]
 minversion = "9.0"

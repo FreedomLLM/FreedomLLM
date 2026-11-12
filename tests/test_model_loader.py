@@ -1,5 +1,5 @@
 import pytest
-from model_loader import GPUMaker, ModelLoader
+from freedomllm.model_loader import GPUMaker, ModelLoader
 
 
 @pytest.mark.model_loader
