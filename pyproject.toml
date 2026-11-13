@@ -10,6 +10,7 @@ requires-python = ">=3.12"
 dependencies = [
     "torch",
     "triton==3.9.0",
+    "helion==1.5.2",
     "safetensors",
     "fastapi[standard]==0.162.2",
 ]
