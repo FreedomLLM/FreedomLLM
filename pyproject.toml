@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "freedomllm"
 version = "0.0.1"
+description = "General-purpose LLM Inference Engine"
 authors = [{ name = "Yeongu Choe", email = "yeongu.choe@icloud.com" }]
 requires-python = ">=3.12"
 dependencies = [
@@ -14,6 +15,11 @@ dependencies = [
     "safetensors",
     "fastapi[standard]==0.162.2",
 ]
+
+[project.urls]
+documentation="https://freedomllm.org"
+source="https://github.com/FreedomLLM/FreedomLLM"
+issues="https://github.com/FreedomLLM/FreedomLLM/issues"
 
 [dependency-groups]
 test = ["pytest==9.2.0", "numpy==2.5.4"]
@@ -30,3 +36,4 @@ testpaths = ["tests"]
 pythonpath = ["."]
 strict_markers = true
 markers = ["model_loader"]
+
